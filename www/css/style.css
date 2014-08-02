@@ -1,2 +1,7 @@
 body {
-  background-color: gray; }
+  background-color: gray;
+}
+
+.double-sided {
+  backface-visibility: visible;
+}

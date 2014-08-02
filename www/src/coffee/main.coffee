@@ -11,7 +11,7 @@ define( (require, exports, module) ->
   logo = new ImageSurface
     size: [200, 200]
     content: 'http://code.famo.us/assets/famous_logo.svg'
-    classes: 'double-sided'
+    classes: ['double-sided']
 
   initialTime = Date.now()
   centerSpin = new Modifier
@@ -20,6 +20,4 @@ define( (require, exports, module) ->
       Transform.rotateY(.002 * (Date.now() - initialTime))
 
   mainContext.add(centerSpin).add(logo)
-
-
 )

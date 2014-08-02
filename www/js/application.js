@@ -9,11 +9,11 @@ define(function(require, exports, module) {
   logo = new ImageSurface({
     size: [200, 200],
     content: 'http://code.famo.us/assets/famous_logo.svg',
-    classes: 'double-sided'
+    classes: ['double-sided']
   });
   initialTime = Date.now();
   centerSpin = new Modifier({
-    origin: [.5, .5],
+    origin: [0.5, .5],
     transform: function() {
       return Transform.rotateY(.002 * (Date.now() - initialTime));
     }
